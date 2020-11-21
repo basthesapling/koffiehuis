@@ -45,3 +45,8 @@ li a:hover {
  background-color: white;
  color: black;
 }
+
+.timer {
+  font-family: Oswald;
+  text-align: center;
+}
