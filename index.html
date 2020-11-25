@@ -50,7 +50,18 @@
     <br>
     <h2>de KoffieStream</h2>
     <p>het kan zijn dat de stream niet werkt. doet hij het niet? dan wordt er aan gewerkt.</p>
-    <iframe src="https://player.twitch.tv/?channel=koffieanon&parent=basthesapling.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+    <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "koffieanon"
+  });
+</script>
     <iframe
     id="chat_embed"
      src="https://www.twitch.tv/embed/koffieanon/chat?parent=https:basthesapling.github.io"
